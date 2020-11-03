@@ -158,7 +158,7 @@
   line-height: 1.15;
   font-size: 24px;
   font-weight: bold;
-  margin-bottom: 0px; 
+  margin-bottom: 0px;
   margin-top: 0px;
 }
 
@@ -203,7 +203,7 @@
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
-  right: 48px;
+  margin-right: 48px;
   text-decoration: none;
   color: #2f80ed;
 }
@@ -229,7 +229,6 @@
 }
 
 .table__cell_theme_dark {
-  width: 200px;
   z-index: 1;
   width: 200px;
   color: white;
