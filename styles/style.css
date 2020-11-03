@@ -9,15 +9,6 @@
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
-/* и элемента с модификатором вида ключ-значение - комментарий постановщика задачи */
-/* не понял к чему это относится */
-.table__cell_theme_dark {
-  width: 200px;
-  color: white;
-  margin-right: 0;
-  margin-top: 80px;
-}
-
 .header {
   display: flex;
   position: relative;
@@ -75,10 +66,12 @@
   line-height: 25px;
   font-weight: normal;
   z-index: 2;
+  margin-top: 0px;
 }
 
 .header__link {
   text-decoration: none;
+  color: #2f80ed;
 }
 
 .description {
@@ -92,6 +85,7 @@
   justify-content: space-between;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 0px;
 }
 
 .two-columns__brief {
@@ -104,10 +98,14 @@
 .two-columns__main-text {
   width: 80%;
   min-width: 784px;
-  display: flex;
   flex-direction: column;
   line-height:34px;
   font-size: 24px;
+}
+
+.two-columns__paragraph {
+  margin-top: 0px;
+  margin-bottom: 30px;
 }
 
 .two-columns__span-accent {
@@ -123,7 +121,7 @@
 .section-title {
   width: 60%;
   text-align: center;
-  margin-top: 100px;
+  margin-top: 0px
   margin-bottom: 20px;
   margin-left: auto;
   margin-right: auto;
@@ -135,14 +133,13 @@
 .section-subtitle {
   width: 60%;
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
 }
 
-.section__table {
+.table {
   display: flex;
   margin-bottom: 100px;
   margin-left: auto;
@@ -152,26 +149,28 @@
   justify-content: space-between;
 }
 
-.table_cell {
+.table__cell {
   width: 250px;
-  margin-top: 20px; /* по брифу 60px */
+  margin-top: 60px;
 }
 
-.table_heading {
+.table__heading {
   line-height: 1.15;
   font-size: 24px;
   font-weight: bold;
-  margin-bottom: 20px; 
+  margin-bottom: 0px; 
+  margin-top: 0px;
 }
 
-.table_text {
+.table__text {
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
+  margin-bottom: 0px;
 }
 
 .feynman {
-  height:790px;
+  min-height:790px;
   background-color: #f2f2f2;
   background-image: url(../images/feynman.png);
   background-size: 867px 637px;
@@ -182,8 +181,7 @@
 
 .feynman__title {
   width: 648px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   text-align: center;
   line-height: 1.15;
   font-size: 120px;
@@ -205,20 +203,22 @@
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
-  margin-right: 48px;
+  right: 48px;
   text-decoration: none;
+  color: #2f80ed;
 }
 
 .kaufman {
   padding-top:90px;
   padding-bottom:90px;
-  background-color: #000;
+  background-color:#1f1f1f;
   color:white;
   position: relative;
   overflow:hidden;
+  z-index: 1;
 }
 
-.kaufman_triangle {
+.kaufman__triangle {
   background-image: url(../images/kaufman-triangle.svg);
   width:877px;
   height:877px;
@@ -228,15 +228,19 @@
   z-index: 0;
 }
 
-.table_cell-kaufman {
+.table__cell_theme_dark {
   width: 200px;
   z-index: 1;
+  width: 200px;
+  color: white;
+  margin-right: 0;
+  margin-top: 80px;
 }
 
 .footer {
   padding-top:60px;
   padding-bottom:40px;
-  background-color: #000;
+  background-color: #1f1f1f;
   color:white;
 }
 
@@ -248,35 +252,50 @@
   width: 90%;
   margin-left: auto;
   margin-right: auto;
-  min-height:350px;
+  min-height: 250px;
 }
 
-.logo_place_footer {
+.footer__column {
+  margin-top:0;
+  margin-bottom:0;
+  margin-left:auto;
+  margin-right:auto;
+  width:100%;
+}
+
+.logo__place_footer {
   width:183px;
   height:35px;
-  position: absolute;
-  top: 0;
-  left: 0;
 }
 
 .footer__author {
-  height: 25px;
+  line-height: 25px;
   font-size: 18px;
   font-weight: normal;
-  position: absolute;
-  bottom: 0;
-  left :0;
   margin: 18px 0;
+  position: absolute;
+  bottom:0;
+  left:0;
 }
 
-.footer__column_author-info {
+.footer__column_content-copyright {
   flex-basis: 711px;
+}
+
+.footer__column-links {
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.footer__column_link-content {
+  list-style-type: none;
+  margin-bottom: 16px;
 }
 
 .footer__link {
   color: white;
   text-decoration: none;
-  height: 25px;
+  min-height: 25px;
   font-size: 18px;
   font-weight: normal;
   margin-top: 20px;
@@ -284,12 +303,12 @@
 }
 
 .footer__column-heading {
-  height: 30px;
+  min-height: 30px;
   font-size: 18px;
   font-weight: bold;
 }
 
-.footer__social-icons {
+.footer__social-icon {
   width:16px;
   height:16px;
   margin-right: 10px;
