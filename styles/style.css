@@ -235,7 +235,7 @@
   background-size: cover;
 }
 
-.table__theme_dark {
+.table_theme_dark {
   margin-bottom: 0px;
 }
 
@@ -282,7 +282,7 @@
   flex-basis: 711px;
 }
 
-.logo__place_footer {
+.logo_place_footer {
   width:183px;
   height:35px;
 }
