@@ -3,4 +3,11 @@
     line-height: 30px;
     font-size: 18px;
     font-weight: normal;
+    text-decoration: none;
+    transition: opacity 1s color 2s ease;
+  }
+
+  .footer__link:hover {
+    opacity: 0.5;
+    color: yellow;
   }
