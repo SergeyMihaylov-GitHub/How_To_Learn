@@ -1,9 +1,9 @@
-.link {
+.resources__link {
     text-decoration: none;
     transition: opacity 1s color 2s ease;
-  }
+}
   
-  .link:hover {
+.resoursces__link:hover {
     opacity: 0.5;
     color: red;
-  }
+}
